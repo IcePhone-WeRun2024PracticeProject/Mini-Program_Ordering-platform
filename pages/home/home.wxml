@@ -1,2 +1,8 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<van-search value="{{ value }}" shape="round" background="#29a0df" placeholder="请输入搜索关键词" bind:search="onSearch" />
+<view class="swiperBox">
+    <swiper indicator-dots autoplay interval="3000" circular>
+        <swiper-item wx:for="{{imageUrls}}" wx:key="index">
+            <image src="{{item}}" class="slide-image" mode="aspectFill"></image>
+        </swiper-item>
+    </swiper>
+</view>

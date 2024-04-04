@@ -1,45 +1,46 @@
 {
-  "pages": [
-    "pages/login/login",
-    "pages/otherTel_login/otherTel_login",
-    "pages/a_p_login/a_p_login",
-    "pages/home/home",
-    "pages/order/order",
-    "pages/me/me"
-  ],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
-  },
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents",
-  "usingComponents": {
-    "van-button": "/miniprogram/miniprogram_npm/@vant/weapp/button/index",
-    "van-field": "/miniprogram/miniprogram_npm/@vant/weapp/field/index"
-  },
-  "tabBar": {
-      "selectedColor": "#1296db",
-      "list": [{
-          "pagePath": "pages/home/home",
-          "text": "首页",
-          "iconPath": "/image/Home.png",
-          "selectedIconPath": "/image/selHome.png"
-      },
-      {
-        "pagePath": "pages/order/order",
-        "text": "订单",
-        "iconPath": "/image/order.png",
-        "selectedIconPath": "/image/selorder.png"
+    "pages": [
+        "pages/login/login",
+        "pages/otherTel_login/otherTel_login",
+        "pages/a_p_login/a_p_login",
+        "pages/home/home",
+        "pages/order/order",
+        "pages/me/me"
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarBackgroundColor": "#ffffff"
     },
-    {
-        "pagePath": "pages/me/me",
-        "text": "我的",
-        "iconPath": "/image/me.png",
-        "selectedIconPath": "/image/selme.png"
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": {
+        "van-button": "/miniprogram/miniprogram_npm/@vant/weapp/button/index",
+        "van-field": "/miniprogram/miniprogram_npm/@vant/weapp/field/index",
+        "van-search": "/miniprogram/miniprogram_npm/@vant/weapp/search/index"
+    },
+    "tabBar": {
+        "selectedColor": "#1296db",
+        "list": [{
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "/image/Home.png",
+                "selectedIconPath": "/image/selHome.png"
+            },
+            {
+                "pagePath": "pages/order/order",
+                "text": "订单",
+                "iconPath": "/image/order.png",
+                "selectedIconPath": "/image/selorder.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "/image/me.png",
+                "selectedIconPath": "/image/selme.png"
+            }
+        ]
     }
-    ]
-  }
-  
+
 }

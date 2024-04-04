@@ -1,66 +1,51 @@
-// pages/home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
-})
+    data: {
+      value: '' ,// 保存搜索框输入的内容,
+      imageUrls: [] // 图片地址数组
+    },
+    onLoad() {
+        // 从后端获取图片数据
+        this.fetchImageData();
+      },
+      fetchImageData() {
+          this.setData({
+              imageUrls:["https://x0.ifengimg.com/ucms/2020_49/71E3D1A6909DC330BDC8F9B3B5A8DD0E55361DCE_w1921_h1081.jpg","https://x0.ifengimg.com/ucms/2020_49/71E3D1A6909DC330BDC8F9B3B5A8DD0E55361DCE_w1921_h1081.jpg","https://x0.ifengimg.com/ucms/2020_49/71E3D1A6909DC330BDC8F9B3B5A8DD0E55361DCE_w1921_h1081.jpg"]
+          })
+        // wx.request({
+        //   url: '',
+        //   success: (res) => {
+        //     const imageData = res.data;
+        //     if (Array.isArray(imageData) && imageData.length > 0) {
+        //       const imageUrls = imageData.map(item => item.url);
+        //       this.setData({
+        //         imageUrls: imageUrls
+        //       });
+        //     } else {
+        //       console.error('图片数据格式错误或为空');
+        //     }
+        //   },
+        //   fail: (error) => {
+        //     console.error('请求图片数据失败：', error);
+        //   }
+        // });
+      
+      },
+    onSearch(event) {
+      // event.detail 为输入框的值
+      const keyword = event.detail;
+      if (keyword.trim() !== '') {
+        // 执行搜索操作
+        console.log('搜索内容：', keyword);
+        // 清空搜索框内容
+        this.setData({
+          value: ''
+        });
+      } else {
+        wx.showToast({
+          title: '请输入搜索内容',
+          icon: 'none'
+        });
+      }
+    }
+  });
+  
