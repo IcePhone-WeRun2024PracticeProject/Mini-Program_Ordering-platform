@@ -1,0 +1,77 @@
+
+.imgBox {
+    border: 5rpx solid #babcbd;
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 80rpx;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imgBox image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .buttonBox {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 30rpx;
+}
+
+.button {
+    width: 75%;
+    height: 100rpx;
+    border-radius: 30rpx;
+    border: 5rpx solid #babcbd;
+    background-color: white;
+    color: black;
+    font-size: 35rpx;
+    margin-bottom: 20rpx;
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    outline:none;
+}
+.button::after {
+    border: 0;
+  }
+
+  
+  
+  .agreementBox {
+    display: flex;
+    align-items: center;
+    margin-top: 30rpx;
+  }
+  
+  .circle {
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    border: 2rpx solid #babcbd;
+    margin-left: 80rpx;
+  }
+  
+  .agreement {
+    font-size: 25rpx;
+    margin-left: 20rpx;
+    color: #333;
+  }
+
+
+
+.passwordLogin {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(26, 230, 245);
+}

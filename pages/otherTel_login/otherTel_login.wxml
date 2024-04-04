@@ -1,0 +1,21 @@
+<view>
+    <view class="imgBox">
+        <image src="/image/logo.jpg"></image>
+    </view>
+</view>
+<view class="inputBox">
+    <view class="phoneBox">
+        <image src="/image/phone.png" mode="aspectFill" />
+        <input placeholder="请输入手机号" />
+    </view>
+    <view class="captchaBox">
+        <view class="captchaInput">
+            <image src="/image/Captcha.png" mode="aspectFill" />
+            <input placeholder="请输入验证码" />
+        </view>
+        <button class="captchaBtn">获取验证码</button>
+    </view>
+    <view class="login">
+        <button bind:tap="goLogin">登录</button>
+    </view>
+</view>

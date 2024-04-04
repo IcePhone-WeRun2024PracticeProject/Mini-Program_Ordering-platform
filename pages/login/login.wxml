@@ -1,0 +1,17 @@
+<view>
+  <view class="imgBox">
+    <image src="/image/logo.jpg"></image>
+  </view>
+  <view class="buttonBox">
+    <button class="button" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">本机号码一键登录</button>
+    <button class="button" bindtap="goOther">使用其他号码登录</button>
+</view>
+<view class="passwordLogin">
+    <view bind:tap="goPassword">密码登录</view>
+    <view>遇到问题</view>
+</view>
+  <view class="agreementBox">
+    <view class="circle" style="{{ isClicked ? 'background-color: #21a1f1;' : '' }}" bindtap="changeColor"></view>
+    <text class="agreement">我已阅读同意“哈大饼”用户服务协议、隐私政策</text>
+  </view>
+</view>

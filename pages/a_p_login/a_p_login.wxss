@@ -1,0 +1,63 @@
+.agreementBox {
+    display: flex;
+    align-items: center;
+    margin-top: 30rpx;
+  }
+  
+  .circle {
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    border: 2rpx solid #babcbd;
+    margin-left: 80rpx;
+  }
+  
+  .agreement {
+    font-size: 25rpx;
+    margin-left: 20rpx;
+    color: #333;
+  }
+
+
+.input-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200rpx;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 5rpx solid #babcbd;
+    margin-bottom: 50rpx;
+}
+
+.input-field {
+    flex: 1;
+    height: 40rpx;
+    font-size: 40rpx;
+    border: none;
+    outline: none;
+    margin-bottom: 20rpx;
+}
+.title{
+    margin-top: 80rpx;
+    margin-left: 80rpx;
+    font-weight:bolder;
+    font-size: 60rpx;
+}
+.login{
+    margin: auto;
+    margin-top:60rpx;
+    width: 300rpx;
+}
+.login button{
+    border-radius:80rpx;
+    background-color: rgb(34, 176, 241);
+}
+
+button::after {
+    border: 0;
+  }

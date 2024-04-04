@@ -1,0 +1,119 @@
+botton{
+    border:none;
+}
+.imgBox {
+    border: 5rpx solid #babcbd;
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 80rpx;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.inputBox {
+    width: 80%;
+    margin: auto;
+    margin-top: 30rpx;
+}
+
+.phoneBox {
+    display: flex;
+    align-items: center;
+    /* 垂直居中对齐 */
+    border: 5rpx solid #babcbd;
+    padding: 10rpx;
+    /* 添加一些内边距，使外观更整洁 */
+    margin-bottom: 30rpx;
+    border-radius: 30rpx;
+}
+
+.phoneBox image {
+    width: 80rpx;
+    /* 调整图片的宽度 */
+    height: 80rpx;
+    /* 调整图片的高度 */
+    margin-right: 10rpx;
+    /* 图片和输入框之间的间距 */
+}
+
+.phoneBox input {
+    flex: 1;
+    /* 输入框占据剩余空间 */
+    height: 80rpx;
+    /* 输入框的高度与图片相同 */
+    border: none;
+    /* 去除输入框的边框 */
+    outline: none;
+    /* 去除输入框的聚焦边框 */
+    font-size: 35rpx;
+    /* 设置输入框文本大小 */
+    margin-left: 20rpx;
+}
+
+.captchaBox {
+    display: flex;
+    align-items: center; 
+}
+.captchaInput {
+    flex:3;
+    display: flex; 
+    align-items: center; 
+    padding: 10rpx;
+    border: 5rpx solid #babcbd;
+    height: 80rpx;
+    font-size: 30rpx;
+    border-radius: 30rpx;
+}
+.captchaInput input {
+    flex: 1;
+    /* 输入框占据剩余空间 */
+    height: 80rpx;
+    /* 输入框的高度与图片相同 */
+    border: none;
+    /* 去除输入框的边框 */
+    outline: none;
+    /* 去除输入框的聚焦边框 */
+    font-size: 35rpx;
+    /* 设置输入框文本大小 */
+    margin-left: 20rpx;
+}
+.captchaInput image {
+    width: 80rpx;
+    /* 调整图片的宽度 */
+    height: 80rpx;
+    /* 调整图片的高度 */
+    margin-right: 10rpx;
+    /* 图片和输入框之间的间距 */
+}
+.captchaBtn {
+    flex:1;
+   
+    height: 100rpx;
+    font-size: 25rpx;
+    text-align: center;
+    line-height: 100rpx;
+    border-radius: 15rpx;
+    margin-left: 5rpx;
+    background-color: #babcbd;
+}
+.login{
+    margin: auto;
+    margin-top:60rpx;
+    width: 300rpx;
+}
+.login button{
+    border-radius:80rpx;
+    background-color: rgb(34, 176, 241);
+    
+}
+button::after {
+    border: 0;
+  }

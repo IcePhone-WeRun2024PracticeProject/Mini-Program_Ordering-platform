@@ -1,0 +1,20 @@
+
+<view class="title">欢迎登录哈大饼</view>
+<view class="input-container">
+    <view class="input-wrapper">
+        <input type="text" placeholder="请输入账号" class="input-field" bindinput="accountInput" />
+    </view>
+    <view class="input-wrapper">
+        <input type="password" placeholder="请输入密码" class="input-field" bindinput="passwordInput" />
+    </view>
+</view>
+
+
+<view class="agreementBox">
+    <view class="circle" style="{{ isClicked ? 'background-color: #21a1f1;' : '' }}" bindtap="changeColor"></view>
+    <text class="agreement">我已阅读同意“哈大饼”用户服务协议、隐私政策</text>
+</view>
+
+<view class="login">
+        <button bind:tap="goLogin">登录</button>
+    </view>
