@@ -13,7 +13,7 @@
             <image src="/image/Captcha.png" mode="aspectFill" />
             <input placeholder="请输入验证码" />
         </view>
-        <button class="captchaBtn">获取验证码</button>
+        <button class="captchaBtn" bindtap="sendCode" disabled="{{smsFlag}}">{{sendTime}}</button>
     </view>
     <view class="login">
         <button bind:tap="goLogin">登录</button>

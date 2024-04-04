@@ -8,9 +8,7 @@ Page({
         this.fetchImageData();
       },
       fetchImageData() {
-          this.setData({
-              imageUrls:["https://x0.ifengimg.com/ucms/2020_49/71E3D1A6909DC330BDC8F9B3B5A8DD0E55361DCE_w1921_h1081.jpg","https://x0.ifengimg.com/ucms/2020_49/71E3D1A6909DC330BDC8F9B3B5A8DD0E55361DCE_w1921_h1081.jpg","https://x0.ifengimg.com/ucms/2020_49/71E3D1A6909DC330BDC8F9B3B5A8DD0E55361DCE_w1921_h1081.jpg"]
-          })
+
         // wx.request({
         //   url: '',
         //   success: (res) => {

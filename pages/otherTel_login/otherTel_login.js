@@ -6,8 +6,33 @@ Page({
      * 页面的初始数据
      */
     data: {
+     sendTime: '获取验证码',
+     sendColor: '#363636',
+     snsMsgWait: 60
+   },
+ 
+  // 获取验证码
+   sendCode: function() {  
+  // 60秒后重新获取验证码
+     var inter = setInterval(function() {
+       this.setData({
+         smsFlag: true,
+         sendColor: '#b6b6b6',
+         sendTime: this.data.snsMsgWait + 's后重发',
+         snsMsgWait: this.data.snsMsgWait - 1
+       });
+       if (this.data.snsMsgWait < 0) {
+         clearInterval(inter)
+         this.setData({
+           sendColor: '#363636',
+           sendTime: '获取验证码',
+           snsMsgWait: 60,
+           smsFlag: false
+         });
+       }
+     }.bind(this), 1000);
+   },
 
-    },
     goLogin() {
         wx.switchTab({
             url: '/pages/home/home',
